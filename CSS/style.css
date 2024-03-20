@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    padding: 100px;
+
+}
+
+
+.lista .proizvod {
+    display: flex;
+    flex-direction: row;
+    ;
+}
+
+button:hover {
+    background-color: grey;
+}

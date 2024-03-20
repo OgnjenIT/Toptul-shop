@@ -1,0 +1,164 @@
+html,
+body {
+    background-color: #224d37 !important;
+    height: 100%;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.custom-shape-divider-top-1710091010 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1710091010 svg {
+    position: relative;
+    display: block;
+    width: calc(157% + 1.3px);
+    height: 130px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1710091010 .shape-fill {
+    fill: #dadada;
+}
+
+.navbar {
+    position: relative;
+    z-index: 999;
+    background: none !important;
+    /* Postavite z-index na veći od shape-a */
+}
+
+li a {
+    color: white !important;
+    font-size: 1.3rem !important;
+    color: #143022 !important;
+    font-weight: 400 !important;
+    margin-left: 30px;
+}
+
+li a:hover {
+    color: #4aaa79 !important;
+}
+
+.logo {
+    height: 80px;
+    width: 170px;
+}
+
+.navbar-collapse {
+    margin-left: 100px;
+}
+
+.animFadeIn {
+    opacity: 0;
+    /* Postavljamo prozirnost na 0 */
+    animation: fadeIn 2s ease-out forwards;
+    /* Primjenjujemo animaciju */
+}
+
+/* Definiramo animaciju */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        /* Sadržaj je nevidljiv na početku */
+    }
+
+    to {
+        opacity: 1;
+        /* Sadržaj postaje vidljiv */
+    }
+}
+
+.animSlowText {
+    animation: textLoad 6s forwards;
+    /* Animacija će se primijeniti na tekst tijekom 6 sekundi */
+    opacity: 0;
+    /* Tekst će biti nevidljiv na početku */
+    white-space: nowrap;
+    /* Tekst neće prelaziti u novi red */
+    overflow: hidden;
+    /* Tekst koji prelazi granice elementa bit će skriven */
+}
+
+@keyframes textLoad {
+    from {
+        width: 0;
+        /* Tekst će započeti s nultom širinom */
+    }
+
+    to {
+        width: 100%;
+        /* Tekst će postepeno doći do pune širine */
+        opacity: 1;
+        /* Tekst će postepeno postati vidljiv */
+    }
+}
+
+.alati h2 {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    padding: 20px;
+}
+
+.alati {
+    text-align: center;
+    width: auto;
+    height: 500px;
+}
+
+.alatiLista {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.card {
+    color: white !important;
+    margin: 20px;
+    width: 200px;
+    max-height: 360px !important;
+    border: 3pt solid rgb(30, 57, 30) !important;
+    border-radius: 15px !important;
+    --bs-card-title-spacer-y: 0rem !important;
+    --bs-card-spacer-y: 0rem !important;
+    background: linear-gradient(0deg, rgb(47, 97, 61) 0%, rgb(29, 52, 31) 100%) !important;
+    padding: 10px;
+}
+
+.card img {
+    padding: 3px;
+    object-fit: fill;
+    min-height: 150px;
+    max-height: 150px;
+}
+
+
+.cijena {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.containerKorpe {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px !important;
+    justify-content: center;
+    padding: 15px;
+
+}
+
+.card-photo {
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    height: 50px !important;
+    width: 50px !important;
+}

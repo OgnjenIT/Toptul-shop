@@ -1,0 +1,178 @@
+html,
+body {
+    background-color: #224d37 !important;
+    height: 100%;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.custom-shape-divider-top-1710091010 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1710091010 svg {
+    position: relative;
+    display: block;
+    width: calc(157% + 1.3px);
+    height: 130px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1710091010 .shape-fill {
+    fill: #dadada;
+}
+
+.navbar {
+    position: relative;
+    z-index: 999;
+    background: none !important;
+    /* Postavite z-index na veći od shape-a */
+}
+
+li a {
+    color: white !important;
+    font-size: 1.3rem !important;
+    color: #143022 !important;
+    font-weight: 400 !important;
+    margin-left: 30px;
+}
+
+li a:hover {
+    color: #4aaa79 !important;
+}
+
+.logo {
+    height: 80px;
+    width: 170px;
+}
+
+.navbar-collapse {
+    margin-left: 100px;
+}
+
+.akcija h3,
+.akcija h4 {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.akcija span {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.akcija h3:hover {
+    color: rgb(194, 194, 194);
+    cursor: pointer;
+}
+
+
+
+.akcija button {
+    border: 1pt solid white;
+    color: white !important;
+}
+
+.akcija button:hover {
+    border: 1pt solid rgb(153, 238, 153);
+    color: rgb(153, 238, 153) !important;
+}
+
+.animFadeIn {
+    opacity: 0;
+    /* Postavljamo prozirnost na 0 */
+    animation: fadeIn 1.7s ease-out forwards;
+    /* Primjenjujemo animaciju */
+}
+
+/* Definiramo animaciju */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        /* Sadržaj je nevidljiv na početku */
+    }
+
+    to {
+        opacity: 1;
+        /* Sadržaj postaje vidljiv */
+    }
+}
+
+.leftSide h2 {
+    color: white;
+    font-weight: 500;
+}
+
+.leftSide p {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.headP {
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+
+
+.leftSide img {
+    height: 100%;
+    width: 100%;
+}
+
+.akcija img:hover {
+    transform: scale(1.2);
+    transition: all 0.6s ease-in-out;
+    cursor: zoom-in;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    min-height: 380px;
+    max-height: 380px;
+    margin: 20px;
+    margin-bottom: 0;
+}
+
+.containerKorpe {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    max-height: 100px !important;
+    min-height: 100px;
+}
+
+.removeBtn {
+    margin: auto !important;
+}
+
+.animSlowText {
+    animation: textLoad 6s forwards;
+    /* Animacija će se primijeniti na tekst tijekom 6 sekundi */
+    opacity: 0;
+    /* Tekst će biti nevidljiv na početku */
+    white-space: nowrap;
+    /* Tekst neće prelaziti u novi red */
+    overflow: hidden;
+    /* Tekst koji prelazi granice elementa bit će skriven */
+}
+
+@keyframes textLoad {
+    from {
+        width: 0;
+        /* Tekst će započeti s nultom širinom */
+    }
+
+    to {
+        width: 100%;
+        /* Tekst će postepeno doći do pune širine */
+        opacity: 1;
+        /* Tekst će postepeno postati vidljiv */
+    }
+}
